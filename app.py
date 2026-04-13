@@ -15,15 +15,6 @@ model = pickle.load(open("model.pkl", "rb"))
 st.title("🐶🐱 Cat vs Dog Classifier")
 st.write("Upload an image and the model will predict whether it's a Cat or Dog.")
 #------------------------
-# Load model + accuracy
-#-------------------------
-model, accuracy = pickle.load(open("model.pkl", "rb"))
-
-st.title("🐶🐱 Cat vs Dog Classifier")
-#------------------------
-# Show accuracy
-#-------------------------
-st.info(f"Model Accuracy: {accuracy * 100:.2f}%")
 
 # -------------------------
 # File Upload
